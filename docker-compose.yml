@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  postgresql:
+    image: 'bitnami/postgresql:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - '5432:5432'
+    container_name: postgresql
